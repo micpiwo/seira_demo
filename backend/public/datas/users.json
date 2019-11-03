@@ -1,0 +1,4 @@
+{"_id":{"$oid":"5dbef2459c0c742238cb1908"},"email":"micpiwo@hotmail.fr","password":"Sladpowa38"}
+{"_id":{"$oid":"5dbef2629c0c742238cb1909"},"email":"test","password":"test"}
+{"_id":{"$oid":"5dbefc3867eaf9113c870b29"},"email":"bob@gmail.com","password":"123456","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5dbf0093a01932045c778622"},"email":"sophie@hotmail.fr","password":"cool","__v":{"$numberInt":"0"}}

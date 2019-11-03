@@ -1,0 +1,9 @@
+_id,name,description,platform,price,photo,avalable,__v
+ObjectId("5dbd2b3b41aab51968486eb9"),Mario Bros,Le mythique jeu de nintendo,Nes,415,/assets/img/mariobros.jpg,OUI,0
+ObjectId("5dbd2b7141aab51968486eba"),Double Dragons,BeatThemUp à 2 joueurs,Nes,458,/assets/img/doubledragon.jpg,NON,0
+ObjectId("5dbd2b9541aab51968486ebb"),Tetris,Le casse brique russe,Nes,145,/assets/img/tetris.jpg,OUI,0
+ObjectId("5dbeef8e38a94419ccae512c"),Duck Hunt,Jeu de canard et de shoot,Nes,4512.15,/assets/img/duckhunt.jpg,OUI,0
+ObjectId("5dbef02a38a94419ccae512d"),Excitebike,Jeu de Moto de Miyamoto,Nes,451.15,/assets/img/excitebike.jpg,NON,0
+ObjectId("5dbef05c38a94419ccae512e"),KungFu,Beat Them Up à l'ancienne,Nes,451.45,/assets/img/kungfu.jpg,OUI,0
+ObjectId("5dbef09d38a94419ccae512f"),Metroid,Une reference a alien,Nes,7485.45,/assets/img/metroid.jpg,NON,0
+ObjectId("5dbef0d038a94419ccae5130"),Kid Icarus,Ancienne mascotte de nintendo,Nes,4515.15,/assets/img/kidicarus.jpg,OUI,0

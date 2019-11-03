@@ -1,0 +1,5 @@
+_id,email,password
+ObjectId("5dbef2459c0c742238cb1908"),micpiwo@hotmail.fr,Sladpowa38
+ObjectId("5dbef2629c0c742238cb1909"),test,test
+ObjectId("5dbefc3867eaf9113c870b29"),bob@gmail.com,123456
+ObjectId("5dbf0093a01932045c778622"),sophie@hotmail.fr,cool
