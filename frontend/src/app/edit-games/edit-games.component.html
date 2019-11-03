@@ -1,0 +1,43 @@
+<div class="example-container" id="add-games-form">
+  <h1 mat-headline>Editer le jeux</h1>
+
+  <form method="post" class="example-form">
+    <p>ID du jeux : {{games._id}}</p>
+    <img src="{{games.photo}}" width="25%"/>
+    <mat-form-field class="example-full-width">
+      <input  type="text" [(ngModel)]="updateGameDatas._id" matInput placeholder="{{games._id}}" value="{{games._id}}" name="id" id="id" required>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input  type="text" [(ngModel)]="updateGameDatas.name" matInput placeholder="{{games.name}}" value="{{games.name}}" name="name" id="name" required>
+    </mat-form-field>
+    <br />
+    <mat-form-field class="example-full-width">
+      <textarea [(ngModel)]="updateGameDatas.description" type="text" matInput placeholder="{{games.description}}" value="{{games.description}}" name="description" id="description"></textarea>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input [(ngModel)]="updateGameDatas.platform" matInput placeholder="{{games.platform}}" value="{{games.platform}}" type="text" name="platform" id="platform" required>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input [(ngModel)]="updateGameDatas.price" type="number" matInput placeholder="{{games.price}}" value="{{games.price}}" name="price" id="price" required>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <input [(ngModel)]="updateGameDatas.photo" type="text" matInput placeholder="{{games.photo}}" value="{{games.photo}}" name="photo" id="photo" required>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+
+      <input [(ngModel)]="updateGameDatas.avalable" type="text" matInput placeholder="{{games.avalable}}" value="{{games.avalable}}" name="avalable" id="avalable" required>
+    </mat-form-field>
+    <button routerLink="/jeux" routerLinkActive="true" (click)="updateGames(updateGameDatas)" type="submit" mat-raised-button color="warn">Mettre à jour le jeux</button>
+    <br /><br />
+    <button routerLink="/jeux" routerLinkActive="true"  type="submit" mat-raised-button color="primary">Retour</button>
+  </form>
+</div>
+
+
+
+

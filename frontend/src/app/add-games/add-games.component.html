@@ -1,0 +1,36 @@
+<div class="example-container" id="add-games-form">
+<h1 mat-headline>Ajouter un jeux</h1>
+
+      <form method="post" class="example-form">
+
+      <mat-form-field class="example-full-width">
+        <input value="Nom du jeux" type="text" [(ngModel)]="addGamesDatas.name" matInput placeholder="Nom du jeux" name="name" id="name" required>
+      </mat-form-field>
+      <br />
+      <mat-form-field class="example-full-width">
+        <textarea [(ngModel)]="addGamesDatas.description" type="text" matInput placeholder="Description du jeux" name="description" id="description"></textarea>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <input [(ngModel)]="addGamesDatas.platform"
+               matInput placeholder="Nom de la console" type="text" name="platform" id="platform" required>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <input [(ngModel)]="addGamesDatas.price" type="number" matInput placeholder="Prix du jeux" name="price" id="price" required>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <input [(ngModel)]="addGamesDatas.photo" type="text" matInput placeholder="Chemin de la photo du jeux ex: /assets/mariobros.jpg" name="photo" id="photo" required>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+
+        <input [(ngModel)]="addGamesDatas.avalable" type="text" matInput placeholder="En stock (Entrer OUI ou NON)" name="avalable" id="avalable" required>
+      </mat-form-field>
+      <button routerLink="/jeux" (click)="addGames()" type="submit" mat-raised-button color="warn">Ajouter le jeux</button>
+      </form>
+</div>
+
+
+

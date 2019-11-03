@@ -1,0 +1,10 @@
+<button mat-raised-button color="warn" [matMenuTriggerFor]="menu">Menu</button>
+<mat-menu #menu="matMenu">
+  <button routerLink="/jeux" routerLinkActive="true"  mat-menu-item>LISTE DES JEUX</button>
+  <button routerLink="/ajouter" routerLinkActive="true"  mat-menu-item>AJOUTER UN JEUX</button>
+</mat-menu>
+
+<div style="float: right">
+  <button routerLink="/login" routerLinkActive="true" mat-button color="accent">Connexion</button>
+  <button routerLink="/register" routerLinkActive="true" mat-button color="primary">Inscription</button>
+</div>

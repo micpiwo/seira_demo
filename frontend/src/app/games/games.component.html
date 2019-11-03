@@ -1,0 +1,27 @@
+
+<mat-grid-list  cols="4"  rowHeight="800px">
+  <mat-grid-tile *ngFor="let games of gamesData">
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title mat-subheader>{{games.name}}</mat-card-title>
+        <mat-card-subtitle>Catégories : JEUX</mat-card-subtitle>
+      </mat-card-header>
+      <img class="img-games"  mat-card-image src="{{games.photo}}" alt="{{games.photo}}" title="{{games.photo}}" >
+      <mat-card-content>
+        <h4 mat-subheader>Description :</h4>
+        <p>
+          {{games.description}}
+        </p>
+        <p>Plateforme : {{games.platform}}</p>
+        <p>Prix : {{games.price}} €</p>
+        <p>En stock : {{games.avalable}}</p>
+
+      </mat-card-content>
+      <mat-card-actions>
+        <a (click)="getGameDetail()" routerLink="/jeux/{{games._id}}" mat-raised-button color="primary">Détails</a>
+        <button routerLink="/editer/{{games._id}}" mat-raised-button color="accent">Editer</button>
+      </mat-card-actions>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

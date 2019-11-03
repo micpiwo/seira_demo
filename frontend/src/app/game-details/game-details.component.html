@@ -1,0 +1,24 @@
+<mat-grid-list  cols="1"  rowHeight="800px">
+  <mat-grid-tile>
+    <mat-card class="card-detail">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title> {{games.name}}</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src="{{games.photo}}" alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <p>Console : {{games.platform}}</p>
+        <p><b>Description :</b> {{games.description}}</p>
+        <p><b>Prix :</b> {{games.price}} €</p>
+        <p>En stock: {{games.avalable}}</p>
+
+      </mat-card-content>
+      <mat-card-actions>
+        <hr>
+        <a routerLink="/jeux"><button mat-raised-button color="accent">ACCUEIL</button></a>
+        <a (click)="deleteGameById(games._id)" routerLink="/jeux" class="menu-btn"><button mat-raised-button color="warn">EFFACER</button></a>
+        <hr><br /><br />
+      </mat-card-actions>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>
